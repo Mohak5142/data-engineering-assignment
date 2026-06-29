@@ -1,0 +1,41 @@
+Insights from Superstore Sales Data Analysis
+
+1. Category Performance
+Technology has the highest total sales (836K) and best average profit per item (78.75).
+Furniture has very low average profit (8.70) despite decent sales volume.
+Office Supplies sells the most units (22,906) but at lower margins.
+
+2. Regional Performance
+West region leads in both sales (764K) and profit (98K).
+South region is the weakest with only 30K in total profit.
+Central and East are mid performers.
+
+3. Top Products
+Canon imageCLASS 2200 Copier is the best selling product with 61,599 in total sales.
+Most top products are from Technology category.
+
+4. Top Customers
+Sean Miller is the highest spending customer at 25,043 total.
+Most top customers are from Consumer segment.
+
+5. Monthly and Yearly Trends
+Sales peak in September every year, likely due to Q3 buying cycles.
+February is consistently the slowest month.
+Revenue has grown from 484K in 2014 to 733K in 2017, around 51% growth overall.
+
+6. Discount Impact
+Orders with no discount have the highest average profit (66.90 per item).
+Discounts above 20% start generating losses on average.
+High discounts above 40% result in average loss of 106 per item which is a major issue.
+
+7. Loss Making Products
+Cubify CubeX 3D Printers and Cisco TelePresence units are the biggest loss makers.
+These are high priced items being sold at heavy discounts which wipes out profit.
+
+8. Customer Segments
+Consumer segment dominates with 2586 orders and 1.16M in sales.
+Home Office is the smallest segment but has a decent profit to order ratio.
+
+9. Data Quality
+No major duplicate issues found. Some customers have 2 orders on the same date
+but these appear to be split shipments, not actual duplicates.

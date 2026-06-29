@@ -1,0 +1,203 @@
+CREATE TABLE IF NOT EXISTS customers (
+    customer_id   TEXT PRIMARY KEY,
+    customer_name TEXT NOT NULL,
+    segment       TEXT NOT NULL,         
+    country       TEXT NOT NULL,
+    city          TEXT NOT NULL,
+    state         TEXT NOT NULL,
+    postal_code   TEXT,
+    region        TEXT NOT NULL          
+);
+
+CREATE TABLE IF NOT EXISTS products (
+    product_id   TEXT PRIMARY KEY,
+    product_name TEXT NOT NULL,
+    category     TEXT NOT NULL,          
+    sub_category TEXT NOT NULL
+);
+
+CREATE TABLE IF NOT EXISTS orders (
+    order_id    TEXT PRIMARY KEY,
+    order_date  TEXT NOT NULL,           
+    ship_date   TEXT NOT NULL,
+    ship_mode   TEXT NOT NULL,
+    customer_id TEXT NOT NULL,
+    FOREIGN KEY (customer_id) REFERENCES customers(customer_id)
+);
+
+CREATE TABLE IF NOT EXISTS order_items (
+    id          INTEGER PRIMARY KEY AUTOINCREMENT,
+    order_id    TEXT    NOT NULL,
+    product_id  TEXT    NOT NULL,
+    sales       REAL    NOT NULL,
+    quantity    INTEGER NOT NULL,
+    discount    REAL    NOT NULL DEFAULT 0,
+    profit      REAL    NOT NULL,
+    FOREIGN KEY (order_id)   REFERENCES orders(order_id),
+    FOREIGN KEY (product_id) REFERENCES products(product_id)
+);
+
+CREATE INDEX IF NOT EXISTS idx_orders_customer   ON orders(customer_id);
+CREATE INDEX IF NOT EXISTS idx_orders_date       ON orders(order_date);
+CREATE INDEX IF NOT EXISTS idx_items_order       ON order_items(order_id);
+CREATE INDEX IF NOT EXISTS idx_items_product     ON order_items(product_id);
+CREATE INDEX IF NOT EXISTS idx_customers_region  ON customers(region);
+CREATE INDEX IF NOT EXISTS idx_products_category ON products(category);
+
+SELECT * FROM customers   LIMIT 5;
+SELECT * FROM products    LIMIT 5;
+SELECT * FROM orders      LIMIT 5;
+SELECT * FROM order_items LIMIT 5;
+
+SELECT 'customers'   AS table_name, COUNT(*) AS row_count FROM customers  UNION ALL
+SELECT 'products',                  COUNT(*)              FROM products    UNION ALL
+SELECT 'orders',                    COUNT(*)              FROM orders      UNION ALL
+SELECT 'order_items',               COUNT(*)              FROM order_items;
+
+SELECT DISTINCT segment FROM customers;
+SELECT DISTINCT region  FROM customers;
+SELECT DISTINCT category FROM products;
+SELECT DISTINCT ship_mode FROM orders;
+
+SELECT o.order_id,
+       c.customer_name,
+       c.region,
+       ROUND(oi.sales, 2) AS sales
+FROM   orders o
+JOIN   customers   c  ON o.customer_id  = c.customer_id
+JOIN   order_items oi ON o.order_id     = oi.order_id
+WHERE  c.region = 'West'
+LIMIT 10;
+
+SELECT oi.order_id,
+       p.product_name,
+       p.category,
+       ROUND(oi.sales, 2) AS sales
+FROM   order_items oi
+JOIN   products p ON oi.product_id = p.product_id
+WHERE  p.category = 'Technology'
+LIMIT 10;
+
+SELECT oi.order_id,
+       p.product_name,
+       ROUND(oi.sales, 2) AS sales
+FROM   order_items oi
+JOIN   products p ON oi.product_id = p.product_id
+WHERE  oi.sales > 500
+ORDER  BY oi.sales DESC
+LIMIT 10;
+
+SELECT o.order_id,
+       o.order_date,
+       c.customer_name
+FROM   orders o
+JOIN   customers c ON o.customer_id = c.customer_id
+WHERE  o.order_date LIKE '2017%'
+LIMIT 10;
+
+SELECT p.category,
+       ROUND(SUM(oi.sales),  2) AS total_sales,
+       SUM(oi.quantity)         AS total_qty,
+       ROUND(AVG(oi.profit), 2) AS avg_profit
+FROM   order_items oi
+JOIN   products p ON oi.product_id = p.product_id
+GROUP  BY p.category
+ORDER  BY total_sales DESC;
+
+SELECT c.region,
+       ROUND(SUM(oi.sales),  2) AS total_sales,
+       ROUND(SUM(oi.profit), 2) AS total_profit
+FROM   order_items oi
+JOIN   orders      o  ON oi.order_id     = o.order_id
+JOIN   customers   c  ON o.customer_id   = c.customer_id
+GROUP  BY c.region
+ORDER  BY total_sales DESC;
+
+SELECT p.sub_category,
+       ROUND(SUM(oi.sales), 2) AS total_sales,
+       SUM(oi.quantity)        AS total_qty
+FROM   order_items oi
+JOIN   products p ON oi.product_id = p.product_id
+GROUP  BY p.sub_category
+ORDER  BY total_sales DESC;
+
+SELECT p.product_name,
+       p.category,
+       ROUND(SUM(oi.sales), 2) AS total_sales
+FROM   order_items oi
+JOIN   products p ON oi.product_id = p.product_id
+GROUP  BY p.product_id
+ORDER  BY total_sales DESC
+LIMIT  10;
+
+SELECT c.customer_name,
+       c.segment,
+       c.region,
+       ROUND(SUM(oi.sales), 2) AS total_spent
+FROM   order_items oi
+JOIN   orders    o ON oi.order_id   = o.order_id
+JOIN   customers c ON o.customer_id = c.customer_id
+GROUP  BY c.customer_id
+ORDER  BY total_spent DESC
+LIMIT  10;
+
+SELECT SUBSTR(o.order_date, 1, 7)    AS month,
+       ROUND(SUM(oi.sales), 2)       AS monthly_sales,
+       COUNT(DISTINCT o.order_id)    AS num_orders
+FROM   order_items oi
+JOIN   orders o ON oi.order_id = o.order_id
+WHERE  o.order_date LIKE '2017%'
+GROUP  BY month
+ORDER  BY month;
+
+SELECT SUBSTR(o.order_date, 1, 4)    AS year,
+       ROUND(SUM(oi.sales),  2)      AS total_sales,
+       ROUND(SUM(oi.profit), 2)      AS total_profit
+FROM   order_items oi
+JOIN   orders o ON oi.order_id = o.order_id
+GROUP  BY year
+ORDER  BY year;
+
+SELECT p.product_name,
+       p.category,
+       ROUND(AVG(oi.profit), 2) AS avg_profit,
+       ROUND(SUM(oi.sales),  2) AS total_sales
+FROM   order_items oi
+JOIN   products p ON oi.product_id = p.product_id
+GROUP  BY p.product_id
+HAVING avg_profit < 0
+ORDER  BY avg_profit ASC
+LIMIT  10;
+
+SELECT c.customer_name,
+       o.order_date,
+       COUNT(*) AS order_count
+FROM   orders    o
+JOIN   customers c ON o.customer_id = c.customer_id
+GROUP  BY o.customer_id, o.order_date
+HAVING order_count > 1
+ORDER  BY order_count DESC
+LIMIT  10;
+
+SELECT CASE
+           WHEN oi.discount = 0    THEN 'No Discount'
+           WHEN oi.discount <= 0.2 THEN 'Low (0–20%)'
+           WHEN oi.discount <= 0.4 THEN 'Medium (20–40%)'
+           ELSE                         'High (>40%)'
+       END                              AS discount_band,
+       COUNT(*)                         AS num_items,
+       ROUND(AVG(oi.profit), 2)        AS avg_profit,
+       ROUND(SUM(oi.sales),  2)        AS total_sales
+FROM   order_items oi
+GROUP  BY discount_band
+ORDER  BY avg_profit DESC;
+
+SELECT c.segment,
+       ROUND(SUM(oi.sales),  2)        AS total_sales,
+       ROUND(SUM(oi.profit), 2)        AS total_profit,
+       COUNT(DISTINCT o.order_id)      AS num_orders
+FROM   order_items oi
+JOIN   orders    o ON oi.order_id   = o.order_id
+JOIN   customers c ON o.customer_id = c.customer_id
+GROUP  BY c.segment
+ORDER  BY total_sales DESC;

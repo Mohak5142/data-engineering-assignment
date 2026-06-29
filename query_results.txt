@@ -1,0 +1,332 @@
+Query 1 - Sample Data: customers
+
+customer_id	customer_name	segment	country	city	state	postal_code	region
+CG-12520	Claire Gute	Consumer	United States	Henderson	Kentucky	42420	South
+DV-13045	Darrin Van Huff	Corporate	United States	Los Angeles	California	90036	West
+SO-20335	Sean O'Donnell	Consumer	United States	Fort Lauderdale	Florida	33311	South
+BH-11710	Brosina Hoffman	Consumer	United States	Los Angeles	California	90032	West
+AA-10480	Andrew Allen	Consumer	United States	Concord	North Carolina	28027	South
+
+rows returned: 5
+
+
+Query 2 - Sample Data: products
+
+product_id	product_name	                                               category	        sub_category
+FUR-BO-10001798	Bush Somerset Collection Bookcase	                       Furniture	Bookcases
+FUR-CH-10000454	Hon Deluxe Fabric Upholstered Stacking Chairs, Rounded Back    Furniture	Chairs
+OFF-LA-10000240	Self-Adhesive Address Labels for Typewriters by Universal      Office Supplies	Labels
+FUR-TA-10000577	Bretford CR4500 Series Slim Rectangular Table	               Furniture	Tables
+OFF-ST-10000760	Eldon Fold 'N Roll Cart System	Office Supplies	Storage
+
+rows returned: 5
+
+
+Query 3 - Sample Data: orders
+
+order_id	order_date	ship_date	ship_mode	customer_id
+CA-2016-152156	2016-11-08	2016-11-11	Second Class	CG-12520
+CA-2016-138688	2016-06-12	2016-06-16	Second Class	DV-13045
+US-2015-108966	2015-10-11	2015-10-18	Standard Class	SO-20335
+CA-2014-115812	2014-06-09	2014-06-14	Standard Class	BH-11710
+CA-2017-114412	2017-04-15	2017-04-20	Standard Class	AA-10480
+
+rows returned: 5
+
+
+Query 4 - Sample Data: order_items
+
+id	order_id	product_id	sales	quantity	discount	profit
+1	CA-2016-152156	FUR-BO-10001798	261.96	2	0.0	41.9136
+2	CA-2016-152156	FUR-CH-10000454	731.94	3	0.0	219.582
+3	CA-2016-138688	OFF-LA-10000240	14.62	2	0.0	6.8714
+4	US-2015-108966	FUR-TA-10000577	957.5775	5	0.45	-383.031
+5	US-2015-108966	OFF-ST-10000760	22.368	2	0.2	2.5164
+
+rows returned: 5
+
+
+Query 5 - Row Counts Per Table
+
+table_name	row_count
+customers	793
+products	1862
+orders	5009
+order_items	9994
+
+rows returned: 4
+
+
+Query 6 - Distinct Segments
+
+segment
+Consumer
+Corporate
+Home Office
+
+rows returned: 3
+
+
+Query 7 - Distinct Regions
+
+region
+Central
+East
+South
+West
+
+rows returned: 4
+
+
+Query 8 - Distinct Categories
+
+category
+Furniture
+Office Supplies
+Technology
+
+rows returned: 3
+
+
+Query 9 - Distinct Ship Modes
+
+ship_mode
+Second Class
+Standard Class
+First Class
+Same Day
+
+rows returned: 4
+
+
+Query 10 - West Region Orders
+
+order_id	customer_name	region	sales
+CA-2016-138688	Darrin Van Huff	West	14.62
+CA-2017-139773	Darrin Van Huff	West	188.55
+CA-2016-106656	Darrin Van Huff	West	4.08
+CA-2016-106656	Darrin Van Huff	West	18.9
+CA-2017-125745	Darrin Van Huff	West	19.52
+CA-2017-168389	Darrin Van Huff	West	721.88
+CA-2017-168389	Darrin Van Huff	West	73.57
+CA-2017-168389	Darrin Van Huff	West	13.58
+CA-2017-168389	Darrin Van Huff	West	64.78
+CA-2014-115812	Brosina Hoffman	West	48.86
+
+rows returned: 10
+
+
+Query 11 - Technology Category Sales
+
+order_id	product_name	category	sales
+CA-2014-115812	Mitel 5320 IP Phone VoIP phone	Technology	907.15
+CA-2016-111913	Mitel 5320 IP Phone VoIP phone	Technology	302.38
+CA-2016-129868	Mitel 5320 IP Phone VoIP phone	Technology	302.38
+CA-2017-157273	Mitel 5320 IP Phone VoIP phone	Technology	604.77
+CA-2014-115812	Konftel 250 Conference phone - Charcoal black	Technology	911.42
+US-2014-117135	Konftel 250 Conference phone - Charcoal black	Technology	284.82
+CA-2015-137974	Konftel 250 Conference phone - Charcoal black	Technology	569.64
+US-2017-130687	Konftel 250 Conference phone - Charcoal black	Technology	455.71
+CA-2014-143336	Cisco SPA 501G IP Phone	Technology	213.48
+CA-2016-121755	Imation 8GB Mini TravelDrive USB 2.0 Flash Drive	Technology	90.57
+
+rows returned: 10
+
+
+Query 12 - Sales greater than 500
+
+order_id	product_name	sales
+CA-2014-145317	Cisco TelePresence System EX90 Videoconferencing Unit	22638.48
+CA-2016-118689	Canon imageCLASS 2200 Advanced Copier	17499.95
+CA-2017-140151	Canon imageCLASS 2200 Advanced Copier	13999.96
+CA-2017-127180	Canon imageCLASS 2200 Advanced Copier	11199.97
+CA-2017-166709	Canon imageCLASS 2200 Advanced Copier	10499.97
+CA-2016-117121	GBC Ibimaster 500 Manual ProClick Binding System	9892.74
+CA-2014-116904	Ibico EPK-21 Electric Binding System	9449.95
+US-2016-107440	3D Systems Cube Printer, 2nd Generation, Magenta	9099.93
+CA-2016-158841	HP Designjet T520 Inkjet Large Format Printer - 24" Color	8749.95
+CA-2016-143714	Canon imageCLASS 2200 Advanced Copier	8399.98
+
+rows returned: 10
+
+
+Query 13 - Orders in 2017
+
+order_id	order_date	customer_name
+CA-2017-114412	2017-04-15	Andrew Allen
+US-2017-156909	2017-07-16	Sandra Flanagan
+CA-2017-107727	2017-10-19	Matt Abelman
+CA-2017-120999	2017-09-10	Linda Cazamias
+CA-2017-139619	2017-09-19	Erin Smith
+CA-2017-114440	2017-09-14	Tracy Blumstein
+US-2017-118038	2017-12-09	Ken Brennan
+US-2017-119662	2017-11-13	Christopher Schild
+CA-2017-140088	2017-05-28	Patrick O'Donnell
+CA-2017-155558	2017-10-26	Paul Gonzalez
+
+rows returned: 10
+
+
+Query 14 - Sales, Quantity and Avg Profit by Category
+
+category	total_sales	total_qty	avg_profit
+Technology	836154.03	6939	78.75
+Furniture	741999.8	8028	8.7
+Office Supplies	719047.03	22906	20.33
+
+rows returned: 3
+
+
+Query 15 - Sales and Profit by Region
+
+region	total_sales	total_profit
+West	764634.45	98008.22
+East	611734.3	94604.31
+Central	518800.13	63609.35
+South	402031.98	30175.14
+
+rows returned: 4
+
+
+Query 16 - Sales by Sub-Category
+
+sub_category	total_sales	total_qty
+Phones	330007.05	3289
+Chairs	328449.1	2356
+Storage	223843.61	3158
+Tables	206965.53	1241
+Binders	203412.73	5974
+Machines	189238.63	440
+Accessories	167380.32	2976
+Copiers	149528.03	234
+Bookcases	114880.0	868
+Appliances	107532.16	1729
+Furnishings	91705.16	3563
+Paper	78479.21	5178
+Supplies	46673.54	647
+Art	27118.79	3000
+Envelopes	16476.4	906
+Labels	12486.31	1400
+Fasteners	3024.28	914
+
+rows returned: 17
+
+
+Query 17 - Top 10 Products by Sales
+
+product_name	category	total_sales
+Canon imageCLASS 2200 Advanced Copier	Technology	61599.82
+Fellowes PB500 Electric Punch Plastic Comb Binding Machine with Manual Bind	Office Supplies	27453.38
+Cisco TelePresence System EX90 Videoconferencing Unit	Technology	22638.48
+HON 5400 Series Task Chairs for Big and Tall	Furniture	21870.58
+GBC DocuBind TL300 Electric Binding System	Office Supplies	19823.48
+GBC Ibimaster 500 Manual ProClick Binding System	Office Supplies	19024.5
+Hewlett Packard LaserJet 3310 Copier	Technology	18839.69
+HP Designjet T520 Inkjet Large Format Printer - 24" Color	Technology	18374.9
+GBC DocuBind P400 Electric Binding System	Office Supplies	17965.07
+High Speed Automatic Electric Letter Opener	Office Supplies	17030.31
+
+rows returned: 10
+
+
+Query 18 - Top 10 Customers by Revenue
+
+customer_name	segment	region	total_spent
+Sean Miller	Home Office	South	25043.05
+Tamara Chand	Corporate	West	19052.22
+Raymond Buch	Consumer	East	15117.34
+Tom Ashbrook	Home Office	East	14595.62
+Adrian Barton	Consumer	West	14473.57
+Ken Lonsdale	Consumer	Central	14175.23
+Sanjit Chand	Consumer	West	14142.33
+Hunter Lopez	Consumer	Central	12873.3
+Sanjit Engle	Consumer	East	12209.44
+Christopher Conant	Consumer	South	12129.07
+
+rows returned: 10
+
+
+Query 19 - Monthly Sales Trend 2017
+
+month	monthly_sales	num_orders
+2017-01	43971.37	69
+2017-02	20301.13	53
+2017-03	58872.35	118
+2017-04	36521.54	116
+2017-05	44261.11	118
+2017-06	52981.73	133
+2017-07	45264.42	111
+2017-08	63120.89	111
+2017-09	87866.65	226
+2017-10	77776.92	147
+2017-11	118447.82	261
+2017-12	83829.32	224
+
+rows returned: 12
+
+
+Query 20 - Yearly Sales Trend
+
+year	total_sales	total_profit
+2014	484247.5	49543.97
+2015	470532.51	61618.6
+2016	609205.6	81795.17
+2017	733215.26	93439.27
+
+rows returned: 4
+
+
+Query 21 - Loss Making Products
+
+product_name	category	avg_profit	total_sales
+Cubify CubeX 3D Printer Triple Head Print	Technology	-3839.99	7999.98
+Cubify CubeX 3D Printer Double Head Print	Technology	-2959.99	11099.96
+Cisco TelePresence System EX90 Videoconferencing Unit	Technology	-1811.08	22638.48
+Lexmark MX611dhe Monochrome Laser Printer	Technology	-1147.49	16829.9
+Zebra GK420t Direct Thermal/Thermal Transfer Printer	Technology	-938.28	703.71
+Chromcraft Bull-Nose Wood Oval Conference Tables & Bases	Furniture	-575.22	9917.64
+Epson TM-T88V Direct Thermal Printer - Monochrome - Desktop	Technology	-528.62	1212.7
+BoxOffice By Design Rectangular and Half-Moon Meeting Room Tables	Furniture	-382.81	1706.25
+LG G2	Technology	-374.99	1499.97
+Brother MFC-9340CDW LED All-In-One Printer, Copier Scanner	Technology	-319.19	341.99
+
+rows returned: 10
+
+
+Query 22 - Duplicate Orders check
+
+customer_name	order_date	order_count
+Alex Grayson	2017-12-22	2
+Brad Eason	2016-05-06	2
+Ben Peterman	2017-12-10	2
+Ben Wallace	2016-10-27	2
+Cassandra Brandow	2017-09-11	2
+Christine Sundaresam	2014-08-15	2
+Eric Murdock	2015-10-01	2
+Greg Tran	2016-02-19	2
+Harry Marie	2017-08-04	2
+Jennifer Braxton	2015-09-03	2
+
+rows returned: 10
+
+
+Query 23 - Discount vs Profit
+
+discount_band	num_items	avg_profit	total_sales
+No Discount	4798	66.9	1087908.47
+Low (0-20%)	3803	26.5	846522.24
+Medium (20-40%)	460	-77.86	234137.9
+High (>40%)	933	-106.71	128632.25
+
+rows returned: 4
+
+
+Query 24 - Segment Performance
+
+segment	total_sales	total_profit	num_orders
+Consumer	1161401.34	134119.21	2586
+Corporate	706146.37	91979.13	1514
+Home Office	429653.15	60298.68	909
+
+rows returned: 3
+
