@@ -1,0 +1,260 @@
+Query 1 - Subquery: Orders with Above-Average Sales
+
+order_id	customer_id	sales
+CA-2014-145317	SM-20320	22638.48
+CA-2016-118689	TC-20980	17499.95
+CA-2017-140151	RB-19360	13999.96
+CA-2017-127180	TA-21385	11199.968
+CA-2017-166709	HL-15040	10499.97
+CA-2016-117121	AB-10105	9892.74
+CA-2014-116904	SC-20095	9449.95
+US-2016-107440	BS-11365	9099.93
+CA-2016-158841	SE-20110	8749.95
+CA-2016-143714	CC-12370	8399.976
+
+rows returned: 10
+
+
+Query 2 - Subquery: Highest Sales Order per Customer
+
+customer_id	customer_name	order_id	sales
+SM-20320	Sean Miller	CA-2014-145317	22638.48
+TC-20980	Tamara Chand	CA-2016-118689	17499.95
+RB-19360	Raymond Buch	CA-2017-140151	13999.96
+TA-21385	Tom Ashbrook	CA-2017-127180	11199.968
+HL-15040	Hunter Lopez	CA-2017-166709	10499.97
+AB-10105	Adrian Barton	CA-2016-117121	9892.74
+SC-20095	Sanjit Chand	CA-2014-116904	9449.95
+BS-11365	Bill Shonely	US-2016-107440	9099.93
+SE-20110	Sanjit Engle	CA-2016-158841	8749.95
+CC-12370	Christopher Conant	CA-2016-143714	8399.976
+
+rows returned: 10
+
+
+Query 3 - Subquery: Customers Who Spent Above Average Total
+
+customer_id	customer_name	total_sales
+SM-20320	Sean Miller	25043.05
+TC-20980	Tamara Chand	19052.22
+RB-19360	Raymond Buch	15117.34
+TA-21385	Tom Ashbrook	14595.62
+AB-10105	Adrian Barton	14473.57
+KL-16645	Ken Lonsdale	14175.23
+SC-20095	Sanjit Chand	14142.33
+HL-15040	Hunter Lopez	12873.3
+SE-20110	Sanjit Engle	12209.44
+CC-12370	Christopher Conant	12129.07
+
+rows returned: 10
+
+
+Query 4 - CTE: Customer Level Sales Metrics
+
+customer_id	customer_name	segment	region	total_sales	avg_sales	total_orders	total_profit
+SM-20320	Sean Miller	Home Office	South	25043.05	1669.54	5	-1980.74
+TC-20980	Tamara Chand	Corporate	West	19052.22	1587.68	5	8981.32
+RB-19360	Raymond Buch	Consumer	East	15117.34	839.85	6	6976.1
+TA-21385	Tom Ashbrook	Home Office	East	14595.62	1459.56	4	4703.79
+AB-10105	Adrian Barton	Consumer	West	14473.57	723.68	10	5444.81
+KL-16645	Ken Lonsdale	Consumer	Central	14175.23	488.8	12	806.85
+SC-20095	Sanjit Chand	Consumer	West	14142.33	642.83	9	5757.41
+HL-15040	Hunter Lopez	Consumer	Central	12873.3	1170.3	6	5622.43
+SE-20110	Sanjit Engle	Consumer	East	12209.44	642.6	11	2650.68
+CC-12370	Christopher Conant	Consumer	South	12129.07	1102.64	5	2177.05
+
+rows returned: 10
+
+
+Query 5 - CTE: Category Sales Summary
+
+category	total_sales	total_profit	total_qty	avg_discount
+Technology	836154.03	145454.95	6939	0.13
+Furniture	741999.8	18451.27	8028	0.17
+Office Supplies	719047.03	122490.8	22906	0.16
+
+rows returned: 3
+
+
+Query 6 - CTE: High Value Orders (above overall avg)
+
+order_id	customer_name	region	order_total	avg_val
+CA-2014-145317	Sean Miller	South	23661.23	458.61
+CA-2016-118689	Tamara Chand	Central	18336.74	458.61
+CA-2017-140151	Raymond Buch	West	14052.48	458.61
+CA-2017-127180	Tom Ashbrook	East	13716.46	458.61
+CA-2014-139892	Becky Martin	Central	10539.9	458.61
+CA-2017-166709	Hunter Lopez	East	10499.97	458.61
+CA-2014-116904	Sanjit Chand	Central	9900.19	458.61
+CA-2016-117121	Adrian Barton	Central	9892.74	458.61
+US-2016-107440	Bill Shonely	East	9135.19	458.61
+CA-2016-158841	Sanjit Engle	South	8805.04	458.61
+
+rows returned: 10
+
+
+Query 7 - Window Function: ROW_NUMBER by Sales per Region
+
+customer_name	region	total_sales	row_num
+Tamara Chand	Central	18437.14	1
+Adrian Barton	Central	12181.59	2
+Becky Martin	Central	10539.9	3
+Sanjit Chand	Central	9900.19	4
+Harry Marie	Central	6621.48	5
+Helen Wasserman	Central	6100.75	6
+Andy Reiter	Central	5802.7	7
+Sean Braxton	Central	5579.94	8
+Tonja Turnell	Central	5301.69	9
+Laura Armstrong	Central	5076.47	10
+Alex Avila	Central	4780.55	11
+Shirley Daniels	Central	4724.42	12
+Cathy Prescott	Central	4697.37	13
+Ken Lonsdale	Central	4517.3	14
+Philisse Overcash	Central	3910.59	15
+Zuschuss Carroll	Central	3869.81	16
+Dianna Wilson	Central	3760.41	17
+Bill Eplett	Central	3501.9	18
+Heather Kirkland	Central	3300.19	19
+Brian Moss	Central	3249.75	20
+
+rows returned: 20
+
+
+Query 8 - Window Function: RANK of Customers by Total Sales
+
+customer_name	segment	total_sales	sales_rank
+Sean Miller	Home Office	25043.05	1
+Tamara Chand	Corporate	19052.22	2
+Raymond Buch	Consumer	15117.34	3
+Tom Ashbrook	Home Office	14595.62	4
+Adrian Barton	Consumer	14473.57	5
+Ken Lonsdale	Consumer	14175.23	6
+Sanjit Chand	Consumer	14142.33	7
+Hunter Lopez	Consumer	12873.3	8
+Sanjit Engle	Consumer	12209.44	9
+Christopher Conant	Consumer	12129.07	10
+
+rows returned: 10
+
+
+Query 9 - Window Function: DENSE_RANK by Category Sales
+
+customer_name	category	total_sales	dense_rnk
+Seth Vernon	Furniture	8332.09	1
+Joe Elijah	Furniture	6920.14	2
+Peter Fuller	Furniture	6837.35	3
+Caroline Jumper	Furniture	6267.19	4
+Greg Tran	Furniture	6219.26	5
+Laura Armstrong	Furniture	5387.39	6
+Tom Prescott	Furniture	4899.12	7
+Nora Preis	Furniture	4839.66	8
+Brenda Bowman	Furniture	4768.5	9
+Bill Donatelli	Furniture	4513.11	10
+Joel Eaton	Furniture	4422.92	11
+Quincy Jones	Furniture	4404.9	12
+Maribeth Schnelling	Furniture	4398.64	13
+Joseph Holt	Furniture	4297.64	14
+Tamara Willingham	Furniture	4276.42	15
+Maria Etezadi	Furniture	4132.06	16
+Justin Deggeller	Furniture	4078.82	17
+Natalie Fritzler	Furniture	4048.74	18
+Anna Häberlin	Furniture	4012.69	19
+Ellis Ballard	Furniture	3939.26	20
+
+rows returned: 20
+
+
+Query 10 - Window Function: Running Total Sales by Order Date
+
+order_date	daily_sales	running_total
+2014-01-03	16.45	16.45
+2014-01-04	288.06	304.51
+2014-01-05	19.54	324.04
+2014-01-06	4407.1	4731.14
+2014-01-07	87.16	4818.3
+2014-01-09	40.54	4858.85
+2014-01-10	54.83	4913.68
+2014-01-11	9.94	4923.62
+2014-01-13	3553.8	8477.41
+2014-01-14	61.96	8539.37
+2014-01-15	149.95	8689.32
+2014-01-16	299.96	8989.28
+2014-01-18	64.86	9054.15
+2014-01-19	378.59	9432.74
+2014-01-20	2673.87	12106.61
+
+rows returned: 15
+
+
+Query 11 - Combined: CTE + Window Function - Customer Sales Ranking
+
+customer_name	segment	region	total_sales	total_profit	num_orders	overall_rank	region_rank	segment_rank
+Sean Miller	Home Office	South	25043.05	-1980.74	5	1	1	1
+Tamara Chand	Corporate	West	19052.22	8981.32	5	2	1	1
+Raymond Buch	Consumer	East	15117.34	6976.1	6	3	1	1
+Tom Ashbrook	Home Office	East	14595.62	4703.79	4	4	2	2
+Adrian Barton	Consumer	West	14473.57	5444.81	10	5	2	2
+Ken Lonsdale	Consumer	Central	14175.23	806.85	12	6	1	3
+Sanjit Chand	Consumer	West	14142.33	5757.41	9	7	3	4
+Hunter Lopez	Consumer	Central	12873.3	5622.43	6	8	2	5
+Sanjit Engle	Consumer	East	12209.44	2650.68	11	9	3	6
+Christopher Conant	Consumer	South	12129.07	2177.05	5	10	2	7
+Todd Sumrall	Corporate	East	11891.75	2371.71	6	11	4	2
+Greg Tran	Consumer	Central	11820.12	2163.43	11	12	3	8
+Becky Martin	Consumer	Central	11789.63	-1659.96	4	13	4	9
+Seth Vernon	Consumer	East	11470.95	1199.42	10	14	5	10
+Caroline Jumper	Consumer	West	11164.97	858.74	8	15	4	11
+
+rows returned: 15
+
+
+Query 12 - Mini Project: Customer Sales Insights - Top Performer per Segment
+
+customer_name	segment	total_sales	total_profit	num_orders	rnk
+Raymond Buch	Consumer	15117.34	6976.1	6	1
+Adrian Barton	Consumer	14473.57	5444.81	10	2
+Ken Lonsdale	Consumer	14175.23	806.85	12	3
+Tamara Chand	Corporate	19052.22	8981.32	5	1
+Todd Sumrall	Corporate	11891.75	2371.71	6	2
+Bill Shonely	Corporate	10501.65	2616.06	5	3
+Sean Miller	Home Office	25043.05	-1980.74	5	1
+Tom Ashbrook	Home Office	14595.62	4703.79	4	2
+Maria Etezadi	Home Office	10663.73	1859.47	10	3
+
+rows returned: 9
+
+
+Query 13 - Mini Project: Sales Distribution by Region and Segment
+
+region	segment	total_sales	total_profit	num_orders	rank_in_region
+Central	Consumer	252031.43	8564.05	604	1
+Central	Corporate	157995.81	18703.9	348	2
+Central	Home Office	91212.64	12438.41	223	3
+East	Consumer	350908.17	41190.98	713	1
+East	Corporate	200409.35	23622.58	434	2
+East	Home Office	127463.73	26709.22	254	3
+South	Consumer	195580.97	26913.57	444	1
+South	Corporate	121885.93	15215.22	247	2
+South	Home Office	74255.0	4620.63	131	3
+West	Consumer	362880.77	57450.6	825	1
+West	Corporate	225855.27	34437.43	485	2
+West	Home Office	136721.78	16530.42	301	3
+
+rows returned: 12
+
+
+Query 14 - Mini Project: Top 3 Products per Category by Sales
+
+category	product_name	total_sales	rnk
+Furniture	HON 5400 Series Task Chairs for Big and Tall	21870.58	1
+Furniture	Riverside Palais Royal Lawyers Bookcase, Royale Cherry Finish	15610.97	2
+Furniture	Bretford Rectangular Conference Table Tops	12995.29	3
+Office Supplies	Fellowes PB500 Electric Punch Plastic Comb Binding Machine with Manual Bind	27453.38	1
+Office Supplies	GBC DocuBind TL300 Electric Binding System	19823.48	2
+Office Supplies	GBC Ibimaster 500 Manual ProClick Binding System	19024.5	3
+Technology	Canon imageCLASS 2200 Advanced Copier	61599.82	1
+Technology	Cisco TelePresence System EX90 Videoconferencing Unit	22638.48	2
+Technology	Hewlett Packard LaserJet 3310 Copier	18839.69	3
+
+rows returned: 9
+
