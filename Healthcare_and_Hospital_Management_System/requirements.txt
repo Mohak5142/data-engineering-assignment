@@ -1,0 +1,5 @@
+pyspark>=3.3,<4
+delta-spark>=2.2,<4
+pandas>=1.5
+pytest>=7
+python-dateutil>=2.8

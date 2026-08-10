@@ -1,0 +1,10 @@
+bundle:
+  name: healthcare_medallion
+include:
+  - workflows/*.yml
+targets:
+  dev:
+    default: true
+    mode: development
+    workspace:
+      host: https://<YOUR-DATABRICKS-WORKSPACE>

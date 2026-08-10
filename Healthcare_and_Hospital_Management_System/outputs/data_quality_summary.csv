@@ -1,0 +1,6 @@
+source_name,rows_read,null_cells,duplicate_primary_keys,dq_score,dq_passed
+patients.csv,50,0,0,1.0,True
+appointments.csv,200,0,0,1.0,True
+billing.csv,200,0,0,1.0,True
+doctors.csv,10,0,0,1.0,True
+treatments.csv,200,0,0,1.0,True

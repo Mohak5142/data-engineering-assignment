@@ -1,0 +1,1 @@
+SELECT source_name, rows_read, rows_rejected, dq_score_avg, status FROM healthcare_ops.audit_log ORDER BY pipeline_end_time DESC;

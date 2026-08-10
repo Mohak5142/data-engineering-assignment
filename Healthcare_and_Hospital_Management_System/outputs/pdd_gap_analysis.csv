@@ -1,0 +1,8 @@
+kpi_name,status,reason
+Avg Length of Stay (ALOS),NOT COMPUTABLE FROM SUPPLIED DATA,Requires admit/discharge timestamps; unavailable in actual files.
+HCAHPS Satisfaction Score,NOT COMPUTABLE FROM SUPPLIED DATA,Requires patient satisfaction survey score; unavailable.
+Billing Accuracy Rate,NOT COMPUTABLE FROM SUPPLIED DATA,Requires an authoritative accuracy flag/rule or expected charge comparison.
+Insurance Claim Approval Rate,NOT COMPUTABLE FROM SUPPLIED DATA,"Actual billing.csv has payment_status, not claim_status."
+Medication Inventory Turnover,NOT COMPUTABLE FROM SUPPLIED DATA,No medication inventory/dispensing dataset supplied.
+Operating Cost per Patient,NOT COMPUTABLE FROM SUPPLIED DATA,No operating-cost data supplied.
+Patient Readmission Rate,NOT COMPUTABLE FROM SUPPLIED DATA,No admission/discharge/readmission event history supplied.

@@ -1,0 +1,23 @@
+{
+  "environment": "DEV",
+  "catalog": "healthcare",
+  "schemas": {
+    "bronze": "healthcare_bronze",
+    "silver": "healthcare_silver",
+    "gold": "healthcare_gold",
+    "ops": "healthcare_ops"
+  },
+  "landing_root": "/mnt/landing",
+  "bronze_root": "/mnt/bronze",
+  "silver_root": "/mnt/silver",
+  "gold_root": "/mnt/gold",
+  "quarantine_root": "/mnt/quarantine",
+  "sla_cutoff_utc": "06:00",
+  "bronze_retention_days": 2555,
+  "silver_retention_days": 1825,
+  "gold_retention_days": 1095,
+  "pipeline_version": "2.0.0",
+  "default_timezone": "UTC",
+  "enable_pdd_missing_sources": false,
+  "notes": "PDD expected lab_results/medications are configured as inactive source contracts until files are supplied."
+}

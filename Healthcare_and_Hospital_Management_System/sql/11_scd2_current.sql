@@ -1,0 +1,1 @@
+SELECT patient_id,COUNT(*) version_count,SUM(CASE WHEN _is_current THEN 1 ELSE 0 END) current_versions,MIN(effective_from) first_effective_from,MAX(effective_to) last_effective_to FROM healthcare_silver.patients GROUP BY patient_id;

@@ -1,0 +1,13 @@
+requirement,implementation,status
+Medallion Architecture,Bronze/Silver/Gold Delta,PASS
+Metadata-driven ingestion,source_metadata + generic ingest,PASS
+Daily workflow,Databricks Asset Bundle YAML,PASS - deployment artifact
+Audit log,healthcare_ops.audit_log,PASS
+SCD Type 2,Delta MERGE patient history,PASS
+PII SHA-256,DOB/Phone/Email/Address/Insurance,PASS; SSN absent
+DQ,checks + scores + quarantine,PASS
+Referential integrity,5 supplied relationships,PASS
+8 PDD KPIs,actual + explicit unsupported KPI table,PASS without fabrication
+ADLS/GRS/Unity Catalog,deployment artifacts/guidance,ENVIRONMENT CONFIG REQUIRED
+Actual source data,5 supplied CSVs,PASS
+PDD lab/med sources,inactive contracts only,BLOCKED — files not supplied

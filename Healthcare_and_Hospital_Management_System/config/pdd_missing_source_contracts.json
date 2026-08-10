@@ -1,0 +1,28 @@
+{
+  "lab_results": {
+    "required_columns": [
+      "lab_result_id",
+      "patient_id",
+      "test_name",
+      "result_value",
+      "unit",
+      "reference_range",
+      "abnormal_flag",
+      "test_date"
+    ],
+    "status": "UNAVAILABLE_IN_SUPPLIED_DATA"
+  },
+  "medications": {
+    "required_columns": [
+      "medication_id",
+      "patient_id",
+      "medication_name",
+      "quantity_dispensed",
+      "inventory_units",
+      "unit_cost",
+      "dispense_date",
+      "expiry_date"
+    ],
+    "status": "UNAVAILABLE_IN_SUPPLIED_DATA"
+  }
+}

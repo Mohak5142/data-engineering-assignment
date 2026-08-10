@@ -1,0 +1,1 @@
+SELECT * FROM healthcare_gold.pdd_kpi_gap ORDER BY kpi_name;

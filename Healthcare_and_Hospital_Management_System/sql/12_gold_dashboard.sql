@@ -1,0 +1,1 @@
+SELECT * FROM healthcare_gold.gold_kpi_summary ORDER BY kpi_name;

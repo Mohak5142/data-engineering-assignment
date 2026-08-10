@@ -1,0 +1,1 @@
+SELECT batch_id,status,MIN(pipeline_start_time) start_time,MAX(pipeline_end_time) end_time,SUM(rows_read) rows_read,SUM(rows_written) rows_written,SUM(rows_rejected) rows_rejected,AVG(dq_score_avg) dq_score_avg,MAX(pipeline_duration_secs) duration_secs,MIN(sla_met) sla_met FROM healthcare_ops.audit_log GROUP BY batch_id,status ORDER BY start_time DESC;

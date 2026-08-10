@@ -1,0 +1,11 @@
+doctor_id,first_name,last_name,specialization,hospital_branch,appointment_count,completed_count,cancelled_count,no_show_count,no_show_rate,share_of_total_appointments
+D001,David,Taylor,Dermatology,Westside Clinic,25,6,7,7,28.000000000000004,12.5
+D002,Jane,Davis,Pediatrics,Eastside Clinic,21,5,8,1,4.761904761904762,10.5
+D003,Jane,Smith,Pediatrics,Eastside Clinic,22,6,4,7,31.818181818181817,11.0
+D004,David,Jones,Pediatrics,Central Hospital,14,3,3,5,35.714285714285715,7.000000000000001
+D005,Sarah,Taylor,Dermatology,Central Hospital,29,4,6,9,31.03448275862069,14.499999999999998
+D006,Alex,Davis,Pediatrics,Central Hospital,24,5,6,6,25.0,12.0
+D007,Robert,Davis,Oncology,Westside Clinic,13,5,5,2,15.384615384615385,6.5
+D008,Linda,Brown,Dermatology,Westside Clinic,16,4,5,4,25.0,8.0
+D009,Sarah,Smith,Pediatrics,Central Hospital,17,3,4,6,35.294117647058826,8.5
+D010,Linda,Wilson,Oncology,Eastside Clinic,19,5,3,5,26.31578947368421,9.5

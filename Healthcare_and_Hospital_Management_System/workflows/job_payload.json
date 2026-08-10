@@ -1,0 +1,18 @@
+{
+  "name": "healthcare_daily_pipeline",
+  "schedule": "daily 05:00 UTC",
+  "sla_cutoff": "06:00 UTC",
+  "tasks": [
+    "setup",
+    "bronze",
+    "silver_patients",
+    "silver_appointments",
+    "silver_billing",
+    "silver_doctors_treatments",
+    "gold",
+    "audit"
+  ],
+  "max_concurrent_runs": 1,
+  "bronze_retries": 3,
+  "note": "Import into Databricks Workflows or deploy using Databricks Asset Bundles after replacing workspace host and notebook paths."
+}

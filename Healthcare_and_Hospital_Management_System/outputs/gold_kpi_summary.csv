@@ -1,0 +1,9 @@
+metric,value
+patient_no_show_rate,26.0
+appointment_completion_rate,23.0
+appointment_cancellation_rate,25.5
+appointment_scheduled_rate,25.5
+payment_success_rate_proxy,32.0
+total_billed_amount,551249.8500000001
+average_treatment_cost,2756.2492500000003
+patients_with_appointments,48.0

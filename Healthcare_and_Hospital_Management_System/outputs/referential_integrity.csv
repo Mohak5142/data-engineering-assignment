@@ -1,0 +1,6 @@
+relationship,child_rows,orphan_distinct_keys,orphan_row_count,status
+appointments.patient_id -> patients.patient_id,200,0,0,PASS
+appointments.doctor_id -> doctors.doctor_id,200,0,0,PASS
+billing.patient_id -> patients.patient_id,200,0,0,PASS
+billing.treatment_id -> treatments.treatment_id,200,0,0,PASS
+treatments.appointment_id -> appointments.appointment_id,200,0,0,PASS

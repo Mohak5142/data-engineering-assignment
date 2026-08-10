@@ -1,0 +1,1 @@
+SELECT 100.0*SUM(CASE WHEN status='No-show' THEN 1 ELSE 0 END)/COUNT(*) AS no_show_rate_pct FROM healthcare_silver.appointments;

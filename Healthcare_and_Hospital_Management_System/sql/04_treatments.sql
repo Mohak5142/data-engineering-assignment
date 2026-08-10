@@ -1,0 +1,2 @@
+SELECT treatment_type, COUNT(*) treatment_count, SUM(cost) total_cost, AVG(cost) average_cost, MIN(cost) minimum_cost, MAX(cost) maximum_cost
+FROM healthcare_silver.treatments GROUP BY treatment_type ORDER BY treatment_count DESC;
