@@ -1,0 +1,5 @@
+category,customer_count,total_sales,average_sales,minimum_sales,maximum_sales
+Clothing,4,95000,23750.0,12000,32000
+Electronics,4,175000,43750.0,30000,55000
+Furniture,3,76000,25333.333333333332,18000,36000
+Unknown,1,26000,26000.0,26000,26000

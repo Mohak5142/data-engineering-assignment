@@ -1,0 +1,6 @@
+region,customer_count,total_sales,average_sales
+East,2,62000,31000.0
+North,3,111000,37000.0
+South,2,63000,31500.0
+Unknown,1,12000,12000.0
+West,4,124000,31000.0

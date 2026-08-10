@@ -1,0 +1,14 @@
+id,name,age,category,region,quantity,sales
+1,Aarav,25,Electronics,West,2,50000
+2,Diya,31,Clothing,North,3,24000
+3,Kabir,42,Electronics,West,1,30000
+4,Anaya,28,Furniture,South,2,36000
+5,Rohan,35,Clothing,North,4,32000
+6,Meera,23,Electronics,East,2,40000
+7,Arjun,39,Furniture,West,1,18000
+8,Isha,29,Clothing,South,3,27000
+9,Vivaan,45,Electronics,North,2,55000
+10,Sara,33,Furniture,East,2,22000
+11,Neel,27,,West,2,26000
+12,Tara,41,Clothing,,1,12000
+12,Tara,41,Clothing,,1,12000
