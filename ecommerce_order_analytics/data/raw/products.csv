@@ -1,0 +1,551 @@
+product_id,product_name,category,subcategory,cost_price
+P1001,"Ergonomic Chair 1",Home,Furniture,81.61
+P1002,"Coloring Book 2",Electronics,Computers,95.24
+P1003,"Leather Jacket 3",Home,Bedding,264.87
+P1004,"Duvet Cover Set 4",Home,Furniture,245.63
+P1005,"Self-Help Guide 5",Clothing,Accessories,107.61
+P1006,"Self-Help Guide 6",Electronics,Wearables,85.88
+P1007,"Wireless Headphones 7",Electronics,Wearables,304.38
+P1008,"  DUVET COVER SET 8   ",Electronics,Computers,143.79
+P1009,"  DENIM JEANS 9   ",Electronics,Computers,171.9
+P1010,"Cotton T-Shirt 10",Books,Fiction,474.48
+P1011,"Wireless Headphones 11",Books,Children,94.89
+P1012,"Leather Jacket 12",Home,Decor,423.2
+P1013,"Mystery Novel 13",Home,Kitchen,37.47
+P1014,"Self-Help Guide 14",Books,Sci-Fi,334.1
+P1015,"Duvet Cover Set 15",Electronics,Mobile,52.87
+P1016,"Denim Jeans 16",Electronics,Wearables,44.39
+P1017,"Sunglasses 17",Books,Fiction,437.6
+P1018,"Historical Biography 18",Electronics,Computers,295.47
+P1019,"Leather Jacket 19",Books,Children,262.53
+P1020,"Wireless Headphones 20",Clothing,Men's Wear,367.32
+P1021,"Table Lamp 21",Electronics,Computers,497.81
+P1022,"Historical Biography 22",Home,Furniture,29.02
+P1023,"Self-Help Guide 23",Clothing,Footwear,210.14
+P1024,"Bluetooth Speaker 24",Books,Children,22.99
+P1025,"Gaming Laptop 25",Electronics,Audio,5.6
+P1026,"Coffee Maker 26",Electronics,Audio,266.68
+P1027,"Self-Help Guide 27",Books,Non-Fiction,10.67
+P1028,"Gaming Laptop 28",Electronics,Computers,13.97
+P1029,"Table Lamp 29",Electronics,Gaming,302.03
+P1030,"Coffee Maker 30",Home,Furniture,373.37
+P1031,"Coloring Book 31",Clothing,Accessories,293.86
+P1032,"Table Lamp 32",Home,Furniture,202.32
+P1033,"Smartphone 33",Home,Bedding,369.23
+P1034,"Smartphone 34",Clothing,Accessories,169.02
+P1035,"Smartphone 35",Clothing,Men's Wear,284.09
+P1036,"Historical Biography 36",Clothing,Footwear,444.78
+P1037,"  LEATHER JACKET 37   ",Books,Sci-Fi,318.4
+P1038,"Coffee Maker 38",Electronics,Wearables,255.04
+P1039,"Coffee Maker 39",Electronics,Computers,300.34
+P1040,"Mystery Novel 40",Electronics,Mobile,235.82
+P1041,"Bluetooth Speaker 41",Electronics,Wearables,219.22
+P1042,"Leather Jacket 42",Clothing,Accessories,141.48
+P1043,"Gaming Laptop 43",Books,Fiction,9.92
+P1044,"Coloring Book 44",Home,Kitchen,45.78
+P1045,"Wireless Headphones 45",Electronics,Mobile,347.64
+P1046,"Mystery Novel 46",Electronics,Mobile,64.82
+P1047,"Duvet Cover Set 47",Home,Kitchen,52.56
+P1048,"Gaming Laptop 48",Home,Bedding,211.31
+P1049,"Smart Watch 49",Electronics,Computers,401.33
+P1050,"Table Lamp 50",Home,Bedding,43.95
+P1051,"Coffee Maker 51",Home,Decor,466.87
+P1052,"Coloring Book 52",Home,Bedding,314.89
+P1053,"Leather Jacket 53",Electronics,Wearables,27.58
+P1054,"Table Lamp 54",Clothing,Women's Wear,147.64
+P1055,"Historical Biography 55",Home,Bedding,210.64
+P1056,"  SELF-HELP GUIDE 56   ",Books,Children,382.99
+P1057,"Leather Jacket 57",Home,Furniture,213.75
+P1058,"Wall Clock 58",Books,Non-Fiction,45.92
+P1059,"Smartphone 59",Electronics,Computers,452.32
+P1060,"Ergonomic Chair 60",Books,Sci-Fi,412.71
+P1061,"Coloring Book 61",Electronics,Gaming,254.57
+P1062,"Space Odyssey 62",Clothing,Accessories,276.79
+P1063,"Wireless Headphones 63",Books,Biography,159.2
+P1064,"Sunglasses 64",Home,Furniture,432.54
+P1065,"Running Shoes 65",Home,Kitchen,149.15
+P1066,"Cotton T-Shirt 66",Electronics,Computers,363.93
+P1067,"Running Shoes 67",Home,Bedding,139.05
+P1068,"Smart Watch 68",Books,Non-Fiction,50.45
+P1069,"Coloring Book 69",Clothing,Men's Wear,317.62
+P1070,"Coloring Book 70",Clothing,Men's Wear,242.86
+P1071,"Running Shoes 71",Books,Fiction,399.61
+P1072,"Bluetooth Speaker 72",Electronics,Computers,342.62
+P1073,"Coffee Maker 73",Electronics,Mobile,129.5
+P1074,"Smartphone 74",Books,Fiction,154.51
+P1075," table lamp 75 ",Home,Decor,361.48
+P1076,"Coloring Book 76",Home,Kitchen,91.26
+P1077,"Wall Clock 77",Books,Fiction,342.15
+P1078,"Coffee Maker 78",Books,Fiction,319.68
+P1079,"Coloring Book 79",Home,Decor,241.83
+P1080,"Historical Biography 80",Home,Decor,246.1
+P1081,"Self-Help Guide 81",Books,Biography,247.34
+P1082,"Running Shoes 82",Home,Bedding,117.9
+P1083,"Smart Watch 83",Home,Kitchen,114.98
+P1084,"Coffee Maker 84",Home,Kitchen,448.73
+P1085,"Running Shoes 85",Home,Kitchen,90.62
+P1086,"Smartphone 86",Electronics,Mobile,40.98
+P1087,"Mystery Novel 87",Electronics,Gaming,64.12
+P1088,"Cotton T-Shirt 88",Books,Sci-Fi,67.6
+P1089,"  MYSTERY NOVEL 89   ",Clothing,Women's Wear,277.1
+P1090,"Space Odyssey 90",Home,Kitchen,14.41
+P1091,"Ergonomic Chair 91",Books,Fiction,213.69
+P1092," self-help guide 92 ",Home,Decor,394.51
+P1093,"Sunglasses 93",Clothing,Footwear,317.41
+P1094,"Gaming Laptop 94",Home,Kitchen,17.34
+P1095,"Smartphone 95",Electronics,Gaming,318.44
+P1096,"Smartphone 96",Clothing,Men's Wear,387.13
+P1097," wall clock 97 ",Electronics,Gaming,398.67
+P1098,"Ergonomic Chair 98",Books,Biography,344.25
+P1099,"Space Odyssey 99",Home,Furniture,214.84
+P1100,"Mystery Novel 100",Clothing,Footwear,228.49
+P1101,"Wall Clock 101",Clothing,Men's Wear,61.83
+P1102,"Leather Jacket 102",Home,Furniture,244.45
+P1103,"Cotton T-Shirt 103",Clothing,Women's Wear,98.61
+P1104,"Ergonomic Chair 104",Electronics,Wearables,341.88
+P1105,"Smart Watch 105",Electronics,Computers,198.0
+P1106,"Self-Help Guide 106",Clothing,Women's Wear,57.57
+P1107,"Wall Clock 107",Electronics,Wearables,411.87
+P1108,"Historical Biography 108",Electronics,Computers,434.12
+P1109,"Duvet Cover Set 109",Clothing,Footwear,301.94
+P1110,"Duvet Cover Set 110",Home,Bedding,402.85
+P1111,"  DENIM JEANS 111   ",Electronics,Mobile,422.29
+P1112,"Ergonomic Chair 112",Home,Bedding,22.57
+P1113,"Cotton T-Shirt 113",Clothing,Men's Wear,406.96
+P1114,"Denim Jeans 114",Clothing,Women's Wear,110.06
+P1115,"Running Shoes 115",Home,Kitchen,147.7
+P1116,"Denim Jeans 116",Books,Biography,475.22
+P1117,"Ergonomic Chair 117",Books,Children,179.36
+P1118,"Smartphone 118",Clothing,Accessories,105.54
+P1119,"Historical Biography 119",Electronics,Wearables,114.3
+P1120,"Wall Clock 120",Books,Non-Fiction,220.17
+P1121,"Wireless Headphones 121",Books,Children,30.39
+P1122,"Mystery Novel 122",Electronics,Wearables,348.42
+P1123,"Coffee Maker 123",Books,Sci-Fi,374.28
+P1124,"Cotton T-Shirt 124",Books,Sci-Fi,495.74
+P1125,"Cotton T-Shirt 125",Books,Children,161.96
+P1126,"Coloring Book 126",Books,Non-Fiction,75.25
+P1127,"Coloring Book 127",Electronics,Mobile,487.59
+P1128,"Duvet Cover Set 128",Home,Kitchen,193.52
+P1129,"Gaming Laptop 129",Home,Kitchen,349.52
+P1130,"Smartphone 130",Electronics,Wearables,156.72
+P1131,"Denim Jeans 131",Books,Fiction,160.28
+P1132,"Self-Help Guide 132",Books,Sci-Fi,378.26
+P1133,"Sunglasses 133",Home,Furniture,121.54
+P1134,"Self-Help Guide 134",Electronics,Wearables,201.55
+P1135," smart watch 135 ",Clothing,Men's Wear,163.12
+P1136,"Denim Jeans 136",Home,Furniture,42.27
+P1137,"Gaming Laptop 137",Books,Biography,119.15
+P1138,"Mystery Novel 138",Home,Furniture,121.99
+P1139," space odyssey 139 ",Home,Decor,107.31
+P1140,"Historical Biography 140",Home,Furniture,225.22
+P1141," historical biography 141 ",Home,Furniture,74.26
+P1142,"Duvet Cover Set 142",Electronics,Mobile,469.48
+P1143,"Denim Jeans 143",Books,Fiction,481.79
+P1144,"Historical Biography 144",Clothing,Footwear,281.39
+P1145,"Self-Help Guide 145",Home,Decor,279.59
+P1146,"  LEATHER JACKET 146   ",Books,Non-Fiction,162.02
+P1147,"  HISTORICAL BIOGRAPHY 147   ",Home,Kitchen,136.19
+P1148,"Sunglasses 148",Electronics,Wearables,146.77
+P1149,"Bluetooth Speaker 149",Clothing,Footwear,354.84
+P1150,"Space Odyssey 150",Electronics,Audio,357.79
+P1151,"Table Lamp 151",Electronics,Computers,189.13
+P1152,"Wireless Headphones 152",Books,Non-Fiction,177.79
+P1153,"Gaming Laptop 153",Home,Furniture,402.11
+P1154,"Bluetooth Speaker 154",Electronics,Computers,428.52
+P1155,"Smartphone 155",Home,Bedding,56.05
+P1156,"Self-Help Guide 156",Home,Kitchen,279.86
+P1157,"Cotton T-Shirt 157",Electronics,Wearables,208.03
+P1158,"Table Lamp 158",Electronics,Gaming,482.59
+P1159,"Smart Watch 159",Clothing,Accessories,134.7
+P1160,"Self-Help Guide 160",Home,Kitchen,195.5
+P1161,"Cotton T-Shirt 161",Clothing,Men's Wear,241.94
+P1162,"Coffee Maker 162",Electronics,Mobile,64.15
+P1163,"Duvet Cover Set 163",Clothing,Men's Wear,244.59
+P1164,"Gaming Laptop 164",Clothing,Women's Wear,190.82
+P1165,"Table Lamp 165",Home,Kitchen,184.83
+P1166,"Mystery Novel 166",Home,Decor,43.84
+P1167,"Smartphone 167",Books,Biography,431.02
+P1168,"  SMARTPHONE 168   ",Clothing,Women's Wear,380.06
+P1169,"Coffee Maker 169",Electronics,Gaming,74.64
+P1170,"Historical Biography 170",Books,Sci-Fi,265.83
+P1171," running shoes 171 ",Electronics,Gaming,384.31
+P1172,"Smart Watch 172",Books,Children,242.4
+P1173,"Coloring Book 173",Clothing,Footwear,368.96
+P1174,"Historical Biography 174",Clothing,Men's Wear,376.47
+P1175,"Smart Watch 175",Books,Fiction,150.85
+P1176,"Sunglasses 176",Books,Biography,259.78
+P1177,"  BLUETOOTH SPEAKER 177   ",Electronics,Audio,246.59
+P1178,"Running Shoes 178",Home,Decor,88.66
+P1179,"Denim Jeans 179",Books,Children,268.46
+P1180,"Table Lamp 180",Electronics,Audio,147.66
+P1181,"Cotton T-Shirt 181",Books,Biography,26.37
+P1182,"Coloring Book 182",Home,Bedding,164.01
+P1183," leather jacket 183 ",Books,Sci-Fi,240.01
+P1184,"Table Lamp 184",Electronics,Wearables,486.03
+P1185,"Sunglasses 185",Electronics,Computers,174.31
+P1186,"Wall Clock 186",Books,Non-Fiction,159.61
+P1187,"Smart Watch 187",Home,Furniture,115.04
+P1188,"Denim Jeans 188",Clothing,Accessories,401.18
+P1189,"Wall Clock 189",Home,Bedding,316.52
+P1190,"Space Odyssey 190",Electronics,Wearables,147.48
+P1191,"Coffee Maker 191",Electronics,Gaming,374.08
+P1192,"Duvet Cover Set 192",Home,Decor,378.39
+P1193,"Table Lamp 193",Home,Decor,330.25
+P1194,"Gaming Laptop 194",Clothing,Footwear,429.35
+P1195,"Running Shoes 195",Clothing,Women's Wear,58.63
+P1196,"Bluetooth Speaker 196",Home,Decor,412.06
+P1197,"Running Shoes 197",Books,Non-Fiction,397.39
+P1198,"Duvet Cover Set 198",Clothing,Accessories,496.52
+P1199,"Space Odyssey 199",Electronics,Wearables,343.99
+P1200,"Coloring Book 200",Home,Furniture,364.21
+P1201,"Sunglasses 201",Clothing,Women's Wear,99.83
+P1202,"Table Lamp 202",Home,Furniture,440.92
+P1203,"Mystery Novel 203",Electronics,Mobile,46.33
+P1204," table lamp 204 ",Electronics,Audio,23.19
+P1205,"Sunglasses 205",Books,Non-Fiction,173.54
+P1206,"Running Shoes 206",Electronics,Computers,17.79
+P1207,"Running Shoes 207",Clothing,Footwear,82.94
+P1208,"Denim Jeans 208",Home,Bedding,24.36
+P1209,"Mystery Novel 209",Books,Children,210.84
+P1210,"Smart Watch 210",Clothing,Footwear,447.85
+P1211,"Self-Help Guide 211",Electronics,Mobile,442.43
+P1212,"Smart Watch 212",Books,Non-Fiction,458.55
+P1213,"Running Shoes 213",Clothing,Women's Wear,345.1
+P1214," table lamp 214 ",Books,Non-Fiction,497.14
+P1215,"Smart Watch 215",Home,Kitchen,410.53
+P1216,"Leather Jacket 216",Home,Decor,82.59
+P1217,"Coffee Maker 217",Clothing,Accessories,437.62
+P1218,"Leather Jacket 218",Clothing,Footwear,280.82
+P1219,"Self-Help Guide 219",Clothing,Men's Wear,277.19
+P1220,"Coffee Maker 220",Electronics,Gaming,166.78
+P1221,"Denim Jeans 221",Books,Non-Fiction,313.17
+P1222,"Mystery Novel 222",Home,Furniture,136.67
+P1223,"Bluetooth Speaker 223",Books,Fiction,424.6
+P1224,"Sunglasses 224",Clothing,Women's Wear,355.26
+P1225,"Gaming Laptop 225",Books,Children,203.09
+P1226,"Self-Help Guide 226",Clothing,Footwear,476.21
+P1227,"Denim Jeans 227",Clothing,Footwear,290.31
+P1228,"Wireless Headphones 228",Clothing,Women's Wear,61.93
+P1229,"Historical Biography 229",Books,Biography,18.31
+P1230,"Historical Biography 230",Home,Bedding,458.6
+P1231,"Coloring Book 231",Books,Sci-Fi,125.5
+P1232,"Table Lamp 232",Electronics,Gaming,20.47
+P1233,"Wall Clock 233",Home,Bedding,148.34
+P1234,"Coloring Book 234",Clothing,Men's Wear,130.18
+P1235,"Smartphone 235",Clothing,Women's Wear,213.05
+P1236,"Duvet Cover Set 236",Electronics,Gaming,61.42
+P1237,"Historical Biography 237",Home,Kitchen,268.67
+P1238,"Mystery Novel 238",Clothing,Footwear,94.97
+P1239,"Self-Help Guide 239",Home,Decor,210.62
+P1240,"Wireless Headphones 240",Books,Fiction,254.8
+P1241,"Duvet Cover Set 241",Electronics,Wearables,134.42
+P1242,"Leather Jacket 242",Clothing,Men's Wear,55.98
+P1243,"Running Shoes 243",Home,Furniture,175.44
+P1244,"Mystery Novel 244",Home,Bedding,111.56
+P1245,"Duvet Cover Set 245",Clothing,Men's Wear,476.49
+P1246,"Smart Watch 246",Electronics,Audio,51.18
+P1247,"Wall Clock 247",Clothing,Footwear,358.89
+P1248,"Running Shoes 248",Electronics,Mobile,466.94
+P1249,"Coloring Book 249",Books,Fiction,204.41
+P1250,"Sunglasses 250",Electronics,Audio,400.41
+P1251,"Leather Jacket 251",Clothing,Men's Wear,100.04
+P1252,"Sunglasses 252",Clothing,Women's Wear,22.45
+P1253,"Ergonomic Chair 253",Electronics,Mobile,31.99
+P1254,"Denim Jeans 254",Books,Sci-Fi,131.95
+P1255,"Historical Biography 255",Electronics,Audio,434.1
+P1256,"Smartphone 256",Electronics,Audio,413.94
+P1257,"Smartphone 257",Home,Kitchen,210.11
+P1258,"Leather Jacket 258",Home,Furniture,250.95
+P1259,"Smartphone 259",Books,Sci-Fi,15.55
+P1260,"  SPACE ODYSSEY 260   ",Clothing,Footwear,244.29
+P1261,"Table Lamp 261",Clothing,Men's Wear,75.73
+P1262,"Gaming Laptop 262",Clothing,Footwear,271.17
+P1263,"Table Lamp 263",Electronics,Gaming,119.08
+P1264,"Ergonomic Chair 264",Books,Non-Fiction,416.78
+P1265,"Duvet Cover Set 265",Home,Furniture,385.88
+P1266,"Cotton T-Shirt 266",Books,Non-Fiction,459.86
+P1267,"Sunglasses 267",Home,Bedding,111.91
+P1268,"Gaming Laptop 268",Electronics,Wearables,95.2
+P1269,"Cotton T-Shirt 269",Books,Biography,184.51
+P1270,"Cotton T-Shirt 270",Home,Decor,442.64
+P1271,"Smart Watch 271",Clothing,Footwear,316.26
+P1272,"Wall Clock 272",Books,Sci-Fi,399.48
+P1273,"Leather Jacket 273",Home,Kitchen,268.51
+P1274,"Sunglasses 274",Books,Fiction,405.47
+P1275,"Smartphone 275",Electronics,Computers,97.87
+P1276,"Gaming Laptop 276",Books,Non-Fiction,228.6
+P1277,"Historical Biography 277",Books,Fiction,230.74
+P1278,"Coloring Book 278",Home,Bedding,243.88
+P1279,"Self-Help Guide 279",Home,Furniture,42.19
+P1280,"Table Lamp 280",Electronics,Mobile,150.2
+P1281,"Duvet Cover Set 281",Clothing,Women's Wear,308.07
+P1282,"Mystery Novel 282",Electronics,Computers,17.39
+P1283,"Running Shoes 283",Clothing,Men's Wear,66.23
+P1284,"Historical Biography 284",Home,Bedding,349.54
+P1285,"Smartphone 285",Electronics,Gaming,63.33
+P1286,"Bluetooth Speaker 286",Clothing,Men's Wear,442.43
+P1287,"Smartphone 287",Home,Kitchen,312.36
+P1288,"Ergonomic Chair 288",Home,Furniture,446.75
+P1289,"Self-Help Guide 289",Electronics,Computers,70.45
+P1290,"  LEATHER JACKET 290   ",Electronics,Mobile,26.59
+P1291,"Cotton T-Shirt 291",Home,Furniture,49.26
+P1292,"Mystery Novel 292",Electronics,Computers,290.47
+P1293,"Smart Watch 293",Clothing,Accessories,450.16
+P1294,"Ergonomic Chair 294",Home,Furniture,85.38
+P1295,"Cotton T-Shirt 295",Books,Biography,50.08
+P1296,"Cotton T-Shirt 296",Home,Decor,141.01
+P1297," smart watch 297 ",Electronics,Wearables,236.07
+P1298,"Gaming Laptop 298",Electronics,Gaming,31.92
+P1299,"Smart Watch 299",Home,Bedding,288.57
+P1300,"Coffee Maker 300",Books,Sci-Fi,254.67
+P1301,"Bluetooth Speaker 301",Home,Bedding,458.36
+P1302,"Mystery Novel 302",Electronics,Gaming,180.01
+P1303,"Ergonomic Chair 303",Electronics,Audio,304.25
+P1304,"Ergonomic Chair 304",Books,Sci-Fi,62.88
+P1305," mystery novel 305 ",Electronics,Gaming,358.5
+P1306,"Mystery Novel 306",Books,Non-Fiction,214.76
+P1307,"Running Shoes 307",Electronics,Audio,15.16
+P1308,"  SMARTPHONE 308   ",Clothing,Footwear,209.85
+P1309,"Wireless Headphones 309",Books,Biography,78.04
+P1310,"Duvet Cover Set 310",Books,Fiction,379.31
+P1311,"Bluetooth Speaker 311",Books,Non-Fiction,189.61
+P1312,"Sunglasses 312",Electronics,Wearables,41.93
+P1313,"Table Lamp 313",Electronics,Wearables,290.27
+P1314,"Self-Help Guide 314",Books,Biography,372.04
+P1315,"Smartphone 315",Home,Kitchen,181.77
+P1316,"Smart Watch 316",Electronics,Computers,419.42
+P1317,"Self-Help Guide 317",Clothing,Women's Wear,259.11
+P1318,"Historical Biography 318",Home,Furniture,450.21
+P1319,"Smartphone 319",Books,Sci-Fi,419.98
+P1320,"Wireless Headphones 320",Books,Sci-Fi,243.5
+P1321," historical biography 321 ",Electronics,Mobile,170.09
+P1322,"Gaming Laptop 322",Electronics,Computers,87.01
+P1323,"Duvet Cover Set 323",Home,Furniture,452.0
+P1324," cotton t-shirt 324 ",Electronics,Wearables,99.85
+P1325,"Running Shoes 325",Electronics,Wearables,468.48
+P1326,"Table Lamp 326",Clothing,Footwear,50.45
+P1327,"  WIRELESS HEADPHONES 327   ",Clothing,Accessories,85.54
+P1328,"Wireless Headphones 328",Home,Decor,177.48
+P1329,"Ergonomic Chair 329",Electronics,Wearables,307.04
+P1330," smartphone 330 ",Clothing,Women's Wear,310.98
+P1331,"Wall Clock 331",Books,Children,296.89
+P1332,"Bluetooth Speaker 332",Clothing,Women's Wear,322.6
+P1333,"Gaming Laptop 333",Home,Kitchen,295.28
+P1334,"Cotton T-Shirt 334",Books,Sci-Fi,92.53
+P1335,"Space Odyssey 335",Clothing,Men's Wear,259.66
+P1336,"Sunglasses 336",Home,Furniture,232.67
+P1337,"Cotton T-Shirt 337",Clothing,Men's Wear,19.85
+P1338,"Historical Biography 338",Clothing,Women's Wear,281.55
+P1339,"Coloring Book 339",Clothing,Women's Wear,484.06
+P1340,"Coloring Book 340",Home,Kitchen,303.77
+P1341,"Wall Clock 341",Books,Fiction,163.48
+P1342,"Mystery Novel 342",Home,Bedding,475.77
+P1343,"Smart Watch 343",Clothing,Footwear,190.0
+P1344,"Mystery Novel 344",Books,Children,367.34
+P1345,"Bluetooth Speaker 345",Home,Furniture,213.0
+P1346,"Self-Help Guide 346",Books,Children,267.12
+P1347,"Smart Watch 347",Books,Children,132.82
+P1348,"Sunglasses 348",Home,Decor,328.52
+P1349,"Wireless Headphones 349",Electronics,Wearables,58.71
+P1350,"Cotton T-Shirt 350",Electronics,Mobile,197.98
+P1351,"Space Odyssey 351",Clothing,Accessories,29.06
+P1352,"  BLUETOOTH SPEAKER 352   ",Electronics,Computers,108.61
+P1353,"Leather Jacket 353",Books,Fiction,381.18
+P1354,"Wall Clock 354",Books,Fiction,433.81
+P1355,"Coloring Book 355",Electronics,Wearables,441.89
+P1356,"Running Shoes 356",Electronics,Computers,282.49
+P1357,"Coffee Maker 357",Home,Furniture,16.49
+P1358,"Self-Help Guide 358",Clothing,Footwear,26.56
+P1359,"Wireless Headphones 359",Books,Sci-Fi,146.93
+P1360,"Smart Watch 360",Clothing,Women's Wear,85.57
+P1361,"Coffee Maker 361",Home,Furniture,69.92
+P1362,"Smartphone 362",Clothing,Footwear,330.94
+P1363," ergonomic chair 363 ",Electronics,Mobile,50.68
+P1364,"Duvet Cover Set 364",Electronics,Computers,54.69
+P1365,"Coloring Book 365",Books,Sci-Fi,83.66
+P1366,"Mystery Novel 366",Home,Bedding,363.83
+P1367,"Smart Watch 367",Books,Children,432.67
+P1368,"Coffee Maker 368",Home,Furniture,491.88
+P1369,"  RUNNING SHOES 369   ",Books,Children,375.89
+P1370,"Space Odyssey 370",Home,Furniture,76.34
+P1371,"Historical Biography 371",Home,Decor,265.59
+P1372,"Space Odyssey 372",Clothing,Women's Wear,304.35
+P1373,"Gaming Laptop 373",Books,Sci-Fi,79.07
+P1374,"Smartphone 374",Books,Biography,484.19
+P1375,"Running Shoes 375",Books,Fiction,48.85
+P1376,"Smartphone 376",Home,Furniture,195.22
+P1377,"Self-Help Guide 377",Books,Non-Fiction,91.34
+P1378,"Gaming Laptop 378",Electronics,Mobile,239.49
+P1379,"Duvet Cover Set 379",Electronics,Audio,359.91
+P1380,"Space Odyssey 380",Electronics,Wearables,119.8
+P1381,"Mystery Novel 381",Electronics,Mobile,334.12
+P1382,"Sunglasses 382",Home,Decor,85.06
+P1383,"Gaming Laptop 383",Electronics,Audio,6.79
+P1384,"Running Shoes 384",Clothing,Footwear,413.3
+P1385,"Historical Biography 385",Books,Sci-Fi,299.96
+P1386,"Smart Watch 386",Electronics,Audio,405.19
+P1387,"Ergonomic Chair 387",Home,Decor,226.92
+P1388,"Coffee Maker 388",Home,Bedding,294.81
+P1389,"Smartphone 389",Electronics,Audio,90.54
+P1390,"Bluetooth Speaker 390",Clothing,Accessories,102.27
+P1391,"Bluetooth Speaker 391",Clothing,Women's Wear,128.52
+P1392,"Ergonomic Chair 392",Clothing,Men's Wear,387.51
+P1393,"Ergonomic Chair 393",Books,Biography,34.78
+P1394," wireless headphones 394 ",Clothing,Women's Wear,109.38
+P1395,"Historical Biography 395",Home,Kitchen,49.41
+P1396,"Coloring Book 396",Clothing,Accessories,185.64
+P1397,"Gaming Laptop 397",Clothing,Men's Wear,417.78
+P1398,"Running Shoes 398",Home,Bedding,198.94
+P1399,"Sunglasses 399",Books,Biography,480.07
+P1400,"Leather Jacket 400",Books,Children,339.2
+P1401,"Bluetooth Speaker 401",Books,Sci-Fi,128.27
+P1402,"Coffee Maker 402",Clothing,Women's Wear,198.47
+P1403,"Bluetooth Speaker 403",Clothing,Women's Wear,265.87
+P1404,"Mystery Novel 404",Electronics,Gaming,55.11
+P1405,"  COLORING BOOK 405   ",Electronics,Audio,343.7
+P1406,"Mystery Novel 406",Home,Furniture,87.65
+P1407,"Sunglasses 407",Home,Kitchen,155.97
+P1408,"Leather Jacket 408",Books,Non-Fiction,464.9
+P1409,"Table Lamp 409",Home,Bedding,241.39
+P1410,"Running Shoes 410",Home,Furniture,14.29
+P1411,"Mystery Novel 411",Home,Decor,407.49
+P1412,"Denim Jeans 412",Home,Decor,274.97
+P1413,"Denim Jeans 413",Books,Sci-Fi,202.72
+P1414,"Coffee Maker 414",Books,Biography,450.88
+P1415,"  WIRELESS HEADPHONES 415   ",Electronics,Wearables,172.84
+P1416,"Duvet Cover Set 416",Clothing,Women's Wear,300.71
+P1417,"Historical Biography 417",Books,Children,435.83
+P1418,"  SUNGLASSES 418   ",Clothing,Men's Wear,223.72
+P1419,"Bluetooth Speaker 419",Home,Furniture,490.83
+P1420,"Coffee Maker 420",Books,Sci-Fi,6.36
+P1421,"Space Odyssey 421",Home,Decor,295.75
+P1422,"Coffee Maker 422",Clothing,Footwear,165.81
+P1423,"Historical Biography 423",Clothing,Men's Wear,15.22
+P1424,"Running Shoes 424",Home,Kitchen,498.39
+P1425,"Smartphone 425",Books,Biography,338.02
+P1426,"Space Odyssey 426",Clothing,Men's Wear,243.29
+P1427,"Leather Jacket 427",Home,Kitchen,152.91
+P1428,"Bluetooth Speaker 428",Books,Non-Fiction,201.35
+P1429,"Wireless Headphones 429",Home,Kitchen,257.44
+P1430,"Historical Biography 430",Home,Furniture,324.98
+P1431,"Table Lamp 431",Books,Biography,155.4
+P1432,"Wireless Headphones 432",Home,Furniture,88.16
+P1433,"Space Odyssey 433",Books,Fiction,342.55
+P1434,"  GAMING LAPTOP 434   ",Home,Kitchen,442.59
+P1435,"Table Lamp 435",Home,Bedding,453.8
+P1436,"Table Lamp 436",Books,Sci-Fi,186.62
+P1437,"Denim Jeans 437",Clothing,Footwear,235.87
+P1438,"Cotton T-Shirt 438",Electronics,Mobile,414.84
+P1439,"Table Lamp 439",Books,Fiction,6.11
+P1440,"Bluetooth Speaker 440",Home,Bedding,202.5
+P1441,"Leather Jacket 441",Home,Kitchen,232.61
+P1442,"Coloring Book 442",Home,Bedding,468.35
+P1443," self-help guide 443 ",Electronics,Wearables,413.98
+P1444,"Leather Jacket 444",Books,Non-Fiction,478.94
+P1445,"Cotton T-Shirt 445",Clothing,Accessories,456.67
+P1446,"Cotton T-Shirt 446",Books,Sci-Fi,139.24
+P1447,"Denim Jeans 447",Home,Kitchen,199.68
+P1448,"Wireless Headphones 448",Electronics,Mobile,123.3
+P1449,"Historical Biography 449",Electronics,Gaming,256.85
+P1450,"  LEATHER JACKET 450   ",Books,Children,129.13
+P1451,"Coffee Maker 451",Clothing,Women's Wear,263.81
+P1452,"Wireless Headphones 452",Electronics,Gaming,377.05
+P1453,"  LEATHER JACKET 453   ",Clothing,Footwear,370.04
+P1454,"Self-Help Guide 454",Books,Biography,186.44
+P1455,"Bluetooth Speaker 455",Home,Kitchen,51.12
+P1456,"Denim Jeans 456",Clothing,Accessories,441.32
+P1457,"Ergonomic Chair 457",Clothing,Men's Wear,301.25
+P1458,"Smart Watch 458",Electronics,Mobile,31.71
+P1459,"Historical Biography 459",Home,Furniture,456.87
+P1460,"Cotton T-Shirt 460",Books,Non-Fiction,272.47
+P1461,"Space Odyssey 461",Books,Non-Fiction,350.5
+P1462,"Historical Biography 462",Electronics,Gaming,42.28
+P1463,"Ergonomic Chair 463",Electronics,Wearables,362.02
+P1464,"Smart Watch 464",Clothing,Accessories,333.31
+P1465," coloring book 465 ",Clothing,Accessories,425.25
+P1466,"Gaming Laptop 466",Clothing,Footwear,266.42
+P1467,"  SMARTPHONE 467   ",Clothing,Women's Wear,426.9
+P1468,"  BLUETOOTH SPEAKER 468   ",Clothing,Women's Wear,188.01
+P1469,"Coffee Maker 469",Electronics,Mobile,35.87
+P1470,"Wireless Headphones 470",Electronics,Wearables,194.58
+P1471,"Gaming Laptop 471",Clothing,Men's Wear,310.32
+P1472,"Denim Jeans 472",Clothing,Men's Wear,46.39
+P1473,"Historical Biography 473",Home,Bedding,370.34
+P1474,"Denim Jeans 474",Home,Decor,451.78
+P1475,"Space Odyssey 475",Home,Bedding,347.22
+P1476,"Wireless Headphones 476",Clothing,Men's Wear,112.51
+P1477,"Denim Jeans 477",Electronics,Gaming,406.34
+P1478,"Leather Jacket 478",Clothing,Men's Wear,83.23
+P1479,"Duvet Cover Set 479",Home,Furniture,414.42
+P1480,"Wireless Headphones 480",Home,Bedding,46.5
+P1481,"Smart Watch 481",Home,Kitchen,295.86
+P1482,"Cotton T-Shirt 482",Clothing,Men's Wear,62.46
+P1483,"Ergonomic Chair 483",Home,Decor,281.0
+P1484,"Wireless Headphones 484",Home,Kitchen,466.2
+P1485,"Wall Clock 485",Electronics,Wearables,408.28
+P1486,"Historical Biography 486",Home,Decor,456.61
+P1487,"Sunglasses 487",Home,Decor,68.66
+P1488,"Coloring Book 488",Books,Children,199.52
+P1489,"Wall Clock 489",Clothing,Men's Wear,269.38
+P1490,"Ergonomic Chair 490",Electronics,Mobile,318.83
+P1491,"Table Lamp 491",Books,Fiction,44.18
+P1492,"Smart Watch 492",Home,Kitchen,297.95
+P1493,"Wall Clock 493",Clothing,Men's Wear,248.03
+P1494,"Coloring Book 494",Clothing,Men's Wear,348.66
+P1495,"Wall Clock 495",Electronics,Mobile,374.58
+P1496,"Wall Clock 496",Electronics,Audio,312.88
+P1497,"Historical Biography 497",Books,Non-Fiction,471.18
+P1498,"  RUNNING SHOES 498   ",Electronics,Gaming,390.64
+P1499,"Denim Jeans 499",Electronics,Gaming,133.93
+P1500,"Wall Clock 500",Books,Biography,267.64
+P1501,"Table Lamp 501",Books,Fiction,213.24
+P1502,"Running Shoes 502",Clothing,Women's Wear,181.36
+P1503,"  DENIM JEANS 503   ",Home,Bedding,350.83
+P1504,"Gaming Laptop 504",Home,Kitchen,163.0
+P1505,"Self-Help Guide 505",Electronics,Audio,492.86
+P1506,"Leather Jacket 506",Electronics,Mobile,54.04
+P1507,"Self-Help Guide 507",Clothing,Men's Wear,127.39
+P1508,"Cotton T-Shirt 508",Electronics,Wearables,173.12
+P1509,"Leather Jacket 509",Books,Non-Fiction,461.18
+P1510," denim jeans 510 ",Home,Bedding,335.32
+P1511,"Bluetooth Speaker 511",Home,Decor,214.99
+P1512," space odyssey 512 ",Books,Non-Fiction,187.43
+P1513,"Space Odyssey 513",Electronics,Audio,184.53
+P1514,"Mystery Novel 514",Clothing,Footwear,242.38
+P1515,"  COTTON T-SHIRT 515   ",Home,Bedding,399.57
+P1516,"Table Lamp 516",Clothing,Men's Wear,242.69
+P1517,"Leather Jacket 517",Home,Furniture,284.4
+P1518,"Coloring Book 518",Clothing,Footwear,213.43
+P1519,"Ergonomic Chair 519",Electronics,Computers,481.43
+P1520,"Duvet Cover Set 520",Books,Children,388.44
+P1521,"Coloring Book 521",Home,Bedding,453.14
+P1522,"Sunglasses 522",Clothing,Accessories,45.64
+P1523,"Wall Clock 523",Clothing,Men's Wear,79.14
+P1524,"  COTTON T-SHIRT 524   ",Clothing,Men's Wear,9.78
+P1525,"Wall Clock 525",Electronics,Gaming,413.53
+P1526," self-help guide 526 ",Electronics,Computers,99.76
+P1527,"Duvet Cover Set 527",Books,Biography,284.74
+P1528,"Wireless Headphones 528",Home,Furniture,160.29
+P1529,"Sunglasses 529",Home,Decor,284.14
+P1530,"Denim Jeans 530",Home,Decor,310.11
+P1531,"Denim Jeans 531",Electronics,Mobile,197.81
+P1532,"Coloring Book 532",Home,Kitchen,31.16
+P1533,"Sunglasses 533",Books,Fiction,17.65
+P1534,"Denim Jeans 534",Home,Kitchen,417.79
+P1535,"Space Odyssey 535",Home,Furniture,116.6
+P1536,"Self-Help Guide 536",Books,Children,494.54
+P1537,"Leather Jacket 537",Home,Decor,129.34
+P1538,"Self-Help Guide 538",Clothing,Footwear,86.2
+P1539,"Self-Help Guide 539",Home,Bedding,224.13
+P1540,"Table Lamp 540",Books,Sci-Fi,54.73
+P1541,"Wireless Headphones 541",Clothing,Women's Wear,337.07
+P1542,"Gaming Laptop 542",Home,Kitchen,142.97
+P1543,"Historical Biography 543",Books,Children,377.84
+P1544,"Denim Jeans 544",Home,Bedding,276.16
+P1545,"Duvet Cover Set 545",Home,Decor,208.86
+P1546,"Sunglasses 546",Home,Decor,311.95
+P1547,"Gaming Laptop 547",Clothing,Women's Wear,22.92
+P1548,"Self-Help Guide 548",Books,Biography,241.17
+P1549,"Sunglasses 549",Home,Decor,131.07
+P1550,"Smartphone 550",Home,Kitchen,275.84

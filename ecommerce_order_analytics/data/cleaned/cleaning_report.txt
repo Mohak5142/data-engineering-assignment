@@ -1,0 +1,30 @@
+==================================================
+E-COMMERCE DATA CLEANING REPORT
+==================================================
+
+1. ORDERS CLEANING
+--------------------------------------------------
+- Total raw order rows: 650
+- Orders with missing customer_id imputed ('C_UNKNOWN'): 34
+- Orders with non-standard date format fixed: 38
+
+2. PRODUCTS CLEANING
+--------------------------------------------------
+- Total raw product rows: 550
+- Product names normalized (trimmed & title cased): 50
+
+3. CUSTOMERS EMAIL VALIDATION
+--------------------------------------------------
+- Total raw customer rows: 550
+- Invalid email addresses found: 8
+- Affected Customer IDs: C1106, C1215, C1236, C1279, C1319, C1429, C1434, C1444
+
+4. REFERENTIAL INTEGRITY CHECK
+--------------------------------------------------
+- Total raw order items rows: 1300
+- Orphaned order_items removed (non-existent order_id): 10
+- Non-existent Order IDs found: O99991, O999910, O99992, O99993, O99994, O99995, O99996, O99997, O99998, O99999
+- Cleaned order items remaining: 1290
+
+==================================================
+Cleaning completed successfully!
